@@ -21,7 +21,7 @@ export class GameMap extends AcGameObject {
             new Snake({ id: '1', color: '#F94848', r: 1, c: this.cols - 2 }, this),
         ]
 
-        
+
     }
 
     check_connectivity(g, sx, sy, tx, ty) {
@@ -42,6 +42,7 @@ export class GameMap extends AcGameObject {
     check_valid(cell) { // check if 2 snakes collide or collide with wall
         for (const wall of this.walls) {
             if (wall.r == cell.r && wall.c == cell.c) {
+                console.log('1');
                 return false;
             }
         }
@@ -53,7 +54,9 @@ export class GameMap extends AcGameObject {
             }
             for (let i = 0; i < k; i++) {
                 if (snake.cells[i].r === cell.r && snake.cells[i].c === cell.c) {
+                    console.log(i, cell);
                     return false;
+
                 }
             }
         }
