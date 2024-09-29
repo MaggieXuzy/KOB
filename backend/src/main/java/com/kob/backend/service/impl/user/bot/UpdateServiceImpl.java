@@ -84,7 +84,7 @@ public class UpdateServiceImpl implements UpdateService {
                 new Date()
         );
         botMapper.updateById(new_bot);
-        map.put("error_messsage","success");
+        map.put("error_message","success");
         return map;
     }
 }
