@@ -37,7 +37,7 @@
                                       </div>
                                       <div class="mb-3">
                                         <label for="add-bot-description" class="form-label">Code</label>
-                                        <VAceEditor v-model="botadd.content" @init="editorInit" lang="c_cpp"
+                                        <VAceEditor v-model:value="botadd.content" @init="editorInit" lang="c_cpp"
                                                 theme="textmate" style="height: 300px" :options="{
                                                     enableBasicAutocompletion: true, //启用基本自动完成
                                                     enableSnippets: true, // 启用代码段
@@ -97,7 +97,7 @@
                                                     </div>
                                                     <div class="mb-3">
                                                         <label for="add-bot-description" class="form-label">Code</label>
-                                                        <VAceEditor v-model="bot.content" @init="editorInit" lang="c_cpp"
+                                                        <VAceEditor v-model:value="bot.content" @init="editorInit" lang="c_cpp"
                                                             theme="textmate" style="height: 300px" :options="{
                                                                 enableBasicAutocompletion: true, //启用基本自动完成
                                                                 enableSnippets: true, // 启用代码段
