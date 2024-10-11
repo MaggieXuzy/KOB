@@ -16,7 +16,8 @@
 	<description>backendcloud</description>
 	<modules>
 		<module>backend</module>
-	</modules>
+        <module>botrunningsystem</module>
+    </modules>
 	<packing>pom</packing>
 	<url/>
 	<licenses>
