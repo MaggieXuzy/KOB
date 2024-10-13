@@ -18,7 +18,7 @@
 		<module>backend</module>
         <module>botrunningsystem</module>
     </modules>
-	<packing>pom</packing>
+
 	<url/>
 	<licenses>
 		<license/>
